@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/icon.jpeg">
+    <link rel="stylesheet" href="styles.css">
+    <title>VOCÊ AINDA NÃO VIU O FIM</title>
+    
+</head>
+<body>
+    <!-- Header -->
+    <section class="header-brutal">    
+        <section class="header noise">
+            <h1 class="heavy-noise">VOCÊ AINDA NÃO VIU O FIM.</h1>
+            <button class="brutalist-btn" onclick="window.open('https://loja.uiclap.com/titulo/ua110976', '_blank')">COMPRAR O LIVRO SEM ILUSTRAÇÕES</button>
+            <button class="brutalist-btn" onclick="window.open('https://a.co/d/0amDJutq', '_blank')">COMPRAR E-BOOK</button>
+            <button class="brutalist-btn" onclick="window.open('https://wa.me/+11920197254', '_blank')">COMPRAR O LIVRO COM ILUSTRAÇÕES</button>     
+        </section>
+    </section>
+
+    <!-- Quote Block -->
+    <section class="quote-block noise">
+        <div class="block">
+            <p class="quote-text heavy-noise">"Rubi está morta. Só restou Eco."</p>
+        </div>
+    </section>
+
+    <!-- About Block -->
+    <section class="about-block">
+        <div class="block">
+            <p class="about-text">
+                Eco não luta por um futuro.<br><br>
+                Ela só existe.<br><br>
+                E você vai assistir.
+            </p>
+            <strong>"Eco não luta por um futuro. Ela só existe. E você vai assistir."</strong>
+            
+            <div class="action-buttons">
+                <button class="glitch-btn" onclick="openChapter()">LER PRIMEIRO CAPÍTULO</button>
+                <button class="glitch-btn" onclick="scrollToGallery()">CONHECER OS PERSONAGENS</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Gallery -->
+    <section class="gallery-block noise">
+        <div class="block">
+            <h2 class="gallery-title">OS FRAGMENTOS</h2>
+            <div class="interactive-gallery">
+                <div class="character-shape" data-character="eco">
+                    <div class="shape-content">
+                        <div class="shape-icon">◯</div>
+                        <div class="character-info">
+                            <h3>ECO</h3>
+                            <p>O que restou depois que tudo acabou</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="character-shape" data-character="anton">
+                    <div class="shape-content">
+                        <div class="shape-icon">△</div>
+                        <div class="character-info">
+                            <h3>ANTON</h3>
+                            <p>Ele acreditava que podia salvar todos</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="character-shape" data-character="nico">
+                    <div class="shape-content">
+                        <div class="shape-icon">◢</div>
+                        <div class="character-info">
+                            <h3>NICO</h3>
+                            <p>O observador silencioso</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="character-shape" data-character="you">
+                    <div class="shape-content">
+                        <div class="shape-icon">◼</div>
+                        <div class="character-info">
+                            <h3>VOCÊ</h3>
+                            <p>Sim, você que está lendo isso</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- First Chapter -->
+    <section class="chapter-block">
+        <div class="block">
+            <h2 class="chapter-title">PRIMEIRO CAPÍTULO</h2>
+            <div class="chapter-content">
+                <p class="chapter-text">
+                    Rubi está morta.
+                </p>
+                <p class="chapter-text">
+                    Eu sei porque eu a matei.
+                </p>
+                <p class="chapter-text">
+                    Não com minhas mãos, mas com minha indiferença. Com meu silêncio. Com cada vez que escolhi olhar para o outro lado quando ela precisava de mim.
+                </p>
+                <p class="chapter-text">
+                    Agora só restou Eco.
+                </p>
+                <p class="chapter-text">
+                    E Eco não perdoa.
+                </p>
+                <p class="chapter-text">
+                    Ela me observa através do espelho todas as manhãs, com aqueles olhos que já não são mais dela. Ou talvez nunca tenham sido. Talvez Rubi tenha sido apenas uma ilusão que criei para suportar o peso de existir.
+                </p>
+                <p class="chapter-text">
+                    "Você me deixou morrer", ela sussurra, e sua voz ecoa no banheiro vazio como um lamento que nunca encontra paz.
+                </p>
+                <p class="chapter-text">
+                    Eu tento explicar. Tento dizer que não sabia, que se soubesse teria feito algo diferente. Mas as palavras se dissolvem antes mesmo de deixarem minha garganta, porque ambas sabemos que é mentira.
+                </p>
+                <p class="chapter-text">
+                    Eu sabia.
+                </p>
+                <p class="chapter-text">
+                    Sempre soube.
+                </p>
+                <p class="chapter-text">
+                    E escolhi não ver.
+                </p>
+            </div>
+            
+            <!-- Comments Section -->
+            <div class="comments-section">
+                <h3 class="comments-title">O QUE VOCÊ ACHOU?</h3>
+                
+                <div class="comment-form">
+                    <input type="text" id="commentName" placeholder="SEU NOME" maxlength="50">
+                    <textarea id="commentText" placeholder="DEIXE SEU COMENTÁRIO..." maxlength="500"></textarea>
+                    <button onclick="addComment()" class="comment-btn">COMENTAR</button>
+                </div>
+                
+                <div class="comments-list" id="commentsList">
+                    <div class="comment">
+                        <div class="comment-author">LUCAS FERREIRA</div>
+                        <div class="comment-content">Esse primeiro capítulo me deu arrepios. A culpa da narradora é palpável.</div>
+                        <div class="comment-time">há 2 horas</div>
+                    </div>
+                    
+                    <div class="comment">
+                        <div class="comment-author">SOFIA MARTINS</div>
+                        <div class="comment-content">Não consigo parar de pensar no que realmente aconteceu com Rubi...</div>
+                        <div class="comment-time">há 5 horas</div>
+                    </div>
+                    
+                    <div class="comment">
+                        <div class="comment-author">RAFAEL COSTA</div>
+                        <div class="comment-content">A forma como a autora constrói a atmosfera é impressionante. Já estou com medo do que vem por aí.</div>
+                        <div class="comment-time">há 1 dia</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials-block">
+        <div class="block">
+            <h2 class="testimonials-title">O QUE DIZEM OS LEITORES</h2>
+            <div class="testimonial">
+                <p class="testimonial-text">"Esse livro me fez odiar a autora. E eu li duas vezes."</p>
+                <p class="testimonial-author">MARINA SILVA</p>
+            </div>
+            <div class="testimonial">
+                <p class="testimonial-text">"Eu queria salvar ela. Mas não consegui."</p>
+                <p class="testimonial-author">CARLOS MENDES</p>
+            </div>
+            <div class="testimonial">
+                <p class="testimonial-text">"Não consegui parar de ler. Mesmo quando queria."</p>
+                <p class="testimonial-author">ANA COSTA</p>
+            </div>
+            <div class="testimonial">
+                <p class="testimonial-text">"Este livro me assombra até hoje."</p>
+                <p class="testimonial-author">PEDRO SANTOS</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta noise">
+        <h2 class="heavy-noise">JÁ ESTÁ TUDO EM RUÍNAS.<br>O QUE VOCÊ ESTÁ ESPERANDO?</h2>
+        <button class="order-btn" onclick="scrollToOrderSection()">ENTRAR NA ORDEM</button>
+    </section>
+      
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content heavy-noise">
+            contato@eco.livro • @ecolivro
+        </div>
+    </footer>
+
+    <script>
+        function scrollToGallery() {
+            document.querySelector('.gallery-block').scrollIntoView({ 
+                behavior: 'smooth',
+                block: 'center'
+            });
+        }
+
+        function scrollToOrderSection() {
+            // Scroll to the testimonials section as an example (change selector as needed)
+            document.querySelector('.header-brutal').scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+
+        
+        function openChapter() {
+            document.querySelector('.chapter-block').scrollIntoView({ 
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+        
+        function addComment() {
+            const name = document.getElementById('commentName').value.trim();
+            const text = document.getElementById('commentText').value.trim();
+            
+            if (!name || !text) {
+                alert('Por favor, preencha seu nome e comentário.');
+                return;
+            }
+            
+            const commentsList = document.getElementById('commentsList');
+            const newComment = document.createElement('div');
+            newComment.className = 'comment';
+            
+            const now = new Date();
+            const timeString = 'agora mesmo';
+            
+            newComment.innerHTML = `
+                <div class="comment-author">${name.toUpperCase()}</div>
+                <div class="comment-content">${text}</div>
+                <div class="comment-time">${timeString}</div>
+            `;
+            
+            // Add to top of comments list
+            commentsList.insertBefore(newComment, commentsList.firstChild);
+            
+            // Clear form
+            document.getElementById('commentName').value = '';
+            document.getElementById('commentText').value = '';
+            
+            // Animate new comment
+            newComment.style.opacity = '0';
+            newComment.style.transform = 'translateY(-20px)';
+            setTimeout(() => {
+                newComment.style.transition = 'all 0.5s ease';
+                newComment.style.opacity = '1';
+                newComment.style.transform = 'translateY(0)';
+            }, 100);
+        }
+        
+
+        
+        // Add random noise intensity changes
+        setInterval(() => {
+            const noiseElements = document.querySelectorAll('.heavy-noise::before, .noise::before');
+            document.documentElement.style.setProperty('--noise-intensity', Math.random() * 0.2 + 0.2);
+        }, 2000);
+        
+        // Interactive gallery functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const characterShapes = document.querySelectorAll('.character-shape');
+            
+            characterShapes.forEach(shape => {
+                shape.addEventListener('click', function() {
+                    const character = this.dataset.character;
+                    const characterData = {
+                        eco: {
+                            title: 'ECO',
+                            description: 'O que restou depois que tudo acabou. Ela não escolheu existir, mas aqui está. Eco carrega o peso de todas as memórias perdidas, todos os sonhos desfeitos. Ela é o último suspiro de um mundo que já não existe mais.',
+                            quote: '"Eu não sou Rubi. Nunca fui. Sou apenas o que sobrou."'
+                        },
+                        anton: {
+                            title: 'ANTON',
+                            description: 'Ele acreditava que podia salvar todos. Agora só resta o eco de suas promessas. Anton foi o herói que falhou, o salvador que chegou tarde demais. Suas boas intenções pavimentaram o caminho para o fim.',
+                            quote: '"Eu tentei. Deus sabe que eu tentei."'
+                        },
+                        nico: {
+                            title: 'NICO',
+                            description: 'O observador silencioso. Ele viu tudo desmoronar e não fez nada. Nico conhecia os segredos, sabia das mentiras, mas escolheu o silêncio. Agora vive com o peso de sua omissão.',
+                            quote: '"Às vezes, não fazer nada é a pior escolha de todas."'
+                        },
+                        you: {
+                            title: 'VOCÊ',
+                            description: 'Sim, você. Que está lendo isso agora. Você também faz parte desta história. Cada página que vira, cada palavra que lê, você se torna cúmplice. Não há como escapar.',
+                            quote: '"Você pensou que era apenas um leitor. Estava enganado."'
+                        }
+                    };
+                    
+                    const data = characterData[character];
+                    alert(`${data.title}\n\n${data.description}\n\n${data.quote}`);
+                });
+            });
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'96160a80943e52c4',t:'MTc1Mjg4NDMwMS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
